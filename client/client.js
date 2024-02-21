@@ -16,6 +16,11 @@ const login = async () => {
       username,
       encryptedPassword,
     },
+    proxy: {
+      protocol: "http",
+      host: "127.0.0.1",
+      port: 8080,
+    },
   };
   const response = await axios.request(options);
   console.log(response.data);
